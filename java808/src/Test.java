@@ -1,3 +1,8 @@
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -6,10 +11,16 @@ public class Test {
 
     public static void main(String[] args) {
 
-        System.out.println("5+2 = " + 3 + 4);
-        System.out.println("5+2 = " + (3 + 4));
+        String arra[][] = new String[3][];
+        arra[0] = new String[] { "rose", "lily" };
+        arra[1] = new String[] { "apple", "berry", "cherry", "grapes" };
+        arra[0] = new String[] { "beans", "carrot", "potato" };
+        // insert
 
-        int x = 88;
-        System.out.println("this = " + x);
+        for (String a[]:arra[][]) { 
+            for (String x:a[]) { 
+                toUpperCase(); 
+            } 
+        }
     }
 }
