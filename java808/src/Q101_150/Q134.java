@@ -1,0 +1,22 @@
+package Q101_150;
+
+public class Q134 {
+    public static void main(String[] args) {
+        int num = 5;
+        int sum;
+        do {
+            sum += num;
+        } while ((num--) > 1);
+        System.out.println("The sum is " + sum + ".");
+    }
+}
+
+/**
+ * 這題會發生編譯錯誤
+ * 因為區域變數 sum 沒有初始化
+ * 
+ * 比較:
+ * 若是 int[] b = new int[0];
+ * b[0] 可以得到為 0
+ * 因為陣列的記憶體已經配置好，且初始值會設為0
+ */

@@ -1,16 +1,19 @@
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.Period;
-import java.time.format.DateTimeFormatter;
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
-public class Test {
+public class Test extends Z {
+
+    int c;
 
     public static void main(String[] args) {
-
-        
+       
+        int a;
+        Test b = new Test();
+        System.out.println(b.c);
     }
+}
+
+class Z {
+    int x;
 }
