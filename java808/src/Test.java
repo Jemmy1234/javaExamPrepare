@@ -6,22 +6,28 @@ import java.util.List;
 public class Test {
 
     public static void main(String[] args) {
-        int[] a = { 3, 5 };
 
-        try {
-            throw new UserException("This is test");
-        } catch (RuntimeException e) {
-            System.out.println("2 error");
-            e.printStackTrace();
-        } catch (Exception e) {
-            System.out.println("1 error");
-            e.printStackTrace();
-        }
+        List cs = new ArrayList();
+        cs.add("Java");
+        cs.add("C");
+        
+        Student s = new Student(123, "Fred", cs);
+        System.out.println(s);
     }
 }
 
-class UserException extends Exception {
-    public UserException(String s) {
-        System.out.println("s = " + s);
+class Student {
+    int rollnumber;
+    String name;
+    List cources = new ArrayList();
+
+    // insert code here
+    Student(int rollnumber , String name, ArrayList cources) {
+        this.cources = cources;
+    }
+
+    public String toString() {
+        return rollnumber + " : " + name + " : " + cources;
     }
 }
+
